@@ -13,4 +13,5 @@ class User extends Controller {
   }
   
 }
-?>
+/* End of file user.php */ 
+/* Location: ./system/application/controllers/user.php */ 

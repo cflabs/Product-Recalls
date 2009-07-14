@@ -43,5 +43,5 @@ if ( ! function_exists('produce_slug')) {
 }
 
 
-/* End of file scraping_helper.php */
-/* Location: ./system/helpers/scraping_helper.php */
+/* End of file slug_helper.php */
+/* Location: ./system/helpers/slug_helper.php */

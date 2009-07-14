@@ -1,6 +1,6 @@
 <div id="divContent">
 	<div class="divContainer">
-		<h3>Recall Categories</h3>
+		<h3>Browse product recalls by category</h3>
 
 		<table width="100%" cellspacing="0" border="0">
 		<thead>

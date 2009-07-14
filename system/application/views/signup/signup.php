@@ -10,6 +10,12 @@
 						<input id="txtEmail" name="txtEmail" type="text" class="textbox" value="<?php echo set_value('txtEmail'); ?>" /><br class="clear" />
 					</li>
 					<li>
+						<label for="ddlCat">Which category?</label>
+						<? $catdropdown = 'class="large"';?>
+						<?php echo form_dropdown('ddlCat',$categories,array(),$catdropdown); ?>
+						<br class="clear" />
+					</li>
+					<li>
 						<label for="ddlFrequency">How often?</label>
 						<select id="ddlFrequency" name="ddlFrequency" class="small">
 							<option value="w" <?php echo set_select('ddlFrequency', 'w', TRUE); ?> >Weekly</option>

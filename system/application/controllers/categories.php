@@ -39,7 +39,7 @@ class Categories extends Controller {
   	function index() {
 	  
 		//set up page data 
-		$page_data['page_title'] = "Recall Categories | ".SITE_NAME;
+		$page_data['page_title'] = "Browse product recalls by category | ".SITE_NAME;
 		$page_data['recent_recalls'] = $this->Recall_model->num_recent_recalls();
 		$page_data['feeds']= array();
 		$page_data['menu'] = 'categories';

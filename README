@@ -1,0 +1,30 @@
+== Product Recalls
+
+The product recalls project is a website based upon the Code Igniter (1.7.1) PHP
+framework.  It scrapes details of product recalls from the European Commission
+website and makes them available in a searchable database with categories, email
+subscription and RSS feeds.
+
+For more information, see http://www.consumerfocuslabs.org
+
+== What's new in this release?
+
+This is the initial release of this project.  Future updates will be
+detailed in a CHANGELOG file.
+
+== Installation/Usage
+* Run the sql scripts in the schema directory to create the database
+* Copy all files to your public html directory
+* Rename config/config.example to config/config
+* Update this file with your database and website settings
+* set up a cronjob to run run_scraper.php on a regular basis (this scrapes the EC website)
+* set up a cronjob to run run_emailer.php on a regular basis (this sends the emails)
+
+
+== The distribution
+
+This website runs on the CodeIgniter PHP framework (http://www.codeigniter.com).
+If you need exmples on how to get this running, please see the user guide.
+
+== Dependencies
+* PHP & MySql

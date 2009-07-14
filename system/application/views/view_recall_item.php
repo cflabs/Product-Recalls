@@ -23,17 +23,9 @@
   	</div>
   <?php endif; ?>
   
-<!-- AddThis Button BEGIN -->
-<div class="addthis_toolbox addthis_default_style" style="width:200px;float:right;padding-top:30px;">
-<a href="http://www.addthis.com/bookmark.php?v=250&pub=xa-4a5370fb4218dcc3" class="addthis_button_compact">Share</a>
-<span class="addthis_separator">|</span>
-<a class="addthis_button_facebook"></a>
-<a class="addthis_button_myspace"></a>
-<a class="addthis_button_google"></a>
-<a class="addthis_button_twitter"></a>
-</div>
-<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=xa-4a5370fb4218dcc3"></script>
-<!-- AddThis Button END -->
+<!-- ShareThis Button BEGIN -->
+<div style="width:150px; float: right; padding-top: 30px;"><script type="text/javascript" src="http://w.sharethis.com/button/sharethis.js#publisher=c1c9b7ca-2eef-40d3-beac-bab0387dec1a&amp;type=website&amp;buttonText=Share%20This%20Recall"></script></div>
+<!-- ShareThis Button END -->
 
   
   <p><strong>Source:</strong> <a href="<?php echo $recall['external_url']; ?>" title="View original source for <?php echo $recall['product_name'];?> recall"><?php echo $recall['source_name']; ?> (<?php echo $recall['source_id']; ?>)</a>

@@ -5,7 +5,7 @@
  * @package Product Recalls
  * @subpackage Controllers
  * @category Feeds
- * @author Dafydd Vaughan, Consumer Focus Labs
+ * @author Consumer Focus Labs
  * @link http://www.consumerfocuslabs.org
  */
 class Feed extends Controller {
@@ -192,4 +192,5 @@ class Feed extends Controller {
   	 	
   	 }
 }
-?>
+/* End of file feed.php */
+/* Location: ./system/application/controllers/feed.php */

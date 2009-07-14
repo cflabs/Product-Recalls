@@ -23,7 +23,7 @@
 			<li class="recentUpdates"><?php echo $recent_recalls; ?> updates this month</li>
 			<li <?php if ($menu == 'feedback') :?>class="active"<?php endif; ?>><a href="<?php echo site_url("about/feedback");?>" title="Send us your feedback">Feedback</a></li>
 			<li <?php if ($menu == 'about') :?>class="active"<?php endif; ?>><a href="<?php echo site_url("about");?>" title="About <?php echo SITE_NAME ?>">About</a></li>
-			<li <?php if ($menu == 'categories') :?>class="active"<?php endif; ?>><a href="<?php echo site_url("categories");?>" title="View recall categories">Categories</a></li>
+			<li <?php if ($menu == 'categories') :?>class="active"<?php endif; ?>><a href="<?php echo site_url("browse");?>" title="View recall categories">Browse</a></li>
 			<li <?php if ($menu == 'default') :?>class="active"<?php endif; ?>><a href="<?php echo site_url("");?>" title="Signup for email alerts and search the database">Signup &amp; Search</a></li>
 		</ul>
 		<br class="clear" />

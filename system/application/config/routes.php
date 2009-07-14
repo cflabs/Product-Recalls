@@ -43,6 +43,7 @@
 $route['default_controller'] = "welcome";
 $route['scaffolding_trigger'] = "";
 
+$route['browse'] = "categories/index";
 $route['category/(:any)/page/(:num)'] = "categories/category_lookup_page/$1/$2";
 $route['category/(:any)'] = "categories/category_lookup/$1";
 $route['search/(:any)/(:any)/page/(:num)'] = "search/lookup_page/$1/$2/$3";
