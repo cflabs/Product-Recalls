@@ -1,0 +1,28 @@
+CREATE TABLE `recalls` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `product_name` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `description` text CHARACTER SET latin1 NOT NULL,
+  `date_scraped` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `external_url` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `tradingstandards_id` int(11) DEFAULT NULL,
+  `internal_url` varchar(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=407 DEFAULT CHARSET=utf8
+
+CREATE TABLE `confirmations` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `parent_table` varchar(100) NOT NULL,
+  `parent_id` int(11) NOT NULL,
+  `user_key` varchar(100) NOT NULL,
+  `date_added` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=latin1
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(150) NOT NULL,
+  `frequency` int(11) NOT NULL DEFAULT '1',
+  `date_last_sent` datetime DEFAULT NULL,
+  `live` tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=latin1

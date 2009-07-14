@@ -1,0 +1,27 @@
+Changelog
+
+CFLabs Recalls: 0.3 (released 2009-0X-XX)
+
+CHANGES IN THIS VERSION:
++) EU scraper now checks for "Corrigendum" notes and marks items as appropriate
++) Front end now marks removed items as "(Removed)"
++) RSS Feed and Emailer do not show removed items
++) Categorisation added to database recalls
++) New list of categories with number of recalls
++) Paginated list of recalls for each category
++) Added RSS feeds for each category
+*) Search can now be filtered by category
+*) Search pagination now added
+*) Search RSS feeds can now be filtered by category
+*) Email signups can now be filtered by category
+*) Social media sharing buttons added to individual pages
+*) Slug generator improved
+-) User controller index method removed - could be used to access users details
+HOW TO DEPLOY:
+1) Deploy as normal
+2) Run scripts.sql located in this folder
+   - adds new fields to recalls table
+   - adds new fields to users table
+   - creates new categories table
+3) Run <domain>/eu_scraper/categorise
+   - back fills the category table from existing records

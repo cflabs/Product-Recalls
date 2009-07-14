@@ -1,0 +1,36 @@
+<?php
+/* DATABASE SET UP */
+define("DB_HOSTNAME","localhost");			//db hostname
+define("DB_USERNAME","username");			//db username
+define("DB_PASSWORD","password");			//db password
+define("DB_DATABASE","recalls");			//db database
+
+/* WEBSITE SET UP */
+define("WWW_SERVER", "http://recalls.com");	//website hostname
+define("WWW_CACHE",10);  					//page cache time in minutes
+define("WWW_CACHE_ACTIVE",FALSE);  			//page cache active
+define("WWW_LOG_THRESHOLD",1);				//logging threshold
+
+/* SCRAPER SET UP */
+define("SCRAPER_EMAIL_LOG","log@recalls.com");			//email to send scraping log to
+define("SCRAPER_EMAIL_LOG_PREFIX","[Recalls Scraper]"); //email prefix for scraping log
+define("SCRAPER_SLEEP",0);								//time to wait before scraping each page (seconds)
+
+/* TEMPLATE SET UP */
+define("SITE_NAME","Product Recalls");		//website name
+define("SITE_TAGLINE","UK &amp; European product recalls by email and RSS"); //tag line for site
+define("SITE_ENTRIES_PER_PAGE",10);			//number of recalls to show on each page
+
+/* RSS SET UP */
+define("FEED_NAME","Latest UK &amp; European product recalls RSS feed");	//name of RSS feed
+define("FEED_ENTRIES",10);													//number of items to show in each feed
+
+/* EMAILER SET UP */
+define("EMAILER_SLEEP",10);										//time to wait after each send (seconds)
+define("EMAILER_SUBJECT","[Product Recalls] %t + %n more");		//email subject
+define("EMAILER_ADDRESS","bot@recalls.com");					//address to send from
+define("EMAILER_EMAIL_LOG","log@recalls.com");					//address to send log to
+define("EMAILER_EMAIL_LOG_PREFIX","[Recalls Emailer]");			//subject for log
+
+/* ANALYTICS CODE */
+define("GA_CODE","");	//google analytics code

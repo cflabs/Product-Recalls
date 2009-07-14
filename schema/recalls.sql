@@ -1,0 +1,22 @@
+CREATE TABLE `recalls` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `product_name` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `description` text CHARACTER SET latin1 NOT NULL,
+  `danger` text NOT NULL,
+  `measures_taken` text NOT NULL,
+  `country` varchar(100) NOT NULL,
+  `category` varchar(255) NOT NULL,
+  `category_id` int(11) NOT NULL,
+  `brand` varchar(100) NOT NULL,
+  `external_img_url` varchar(255) DEFAULT NULL,
+  `external_lrgimg_url` varchar(255) DEFAULT NULL,
+  `date_scraped` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `external_url` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `internal_url` varchar(255) NOT NULL DEFAULT '',
+  `source_id` varchar(20) NOT NULL,
+  `source` int(11) NOT NULL,
+  `status` enum('active','removed','updated') NOT NULL DEFAULT 'active',
+  `status_text` varchar(255) DEFAULT NULL,
+  `status_updated` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8
